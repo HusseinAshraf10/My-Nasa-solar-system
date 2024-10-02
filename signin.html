@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="signin.css" />
+    <link
+      rel="shortcut icon"
+      href="images/WhatsApp Image 2024-09-30 at 11.40.35 PM.jpeg"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sign Up - Nasa Student</title>
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <a href="index.html">Nasa student</a>
+      </div>
+      <div class="right-section">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+      </div>
+    </header>
+
+    <!-- Sign-in Form -->
+    <div class="form-container">
+      <h2>Create Your Account</h2>
+      <form action="submit_form.php" method="POST">
+        <div class="input-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+
+        <div class="input-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="input-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" required />
+        </div>
+
+        <div class="input-group gender-group">
+          <label for="gender">Gender</label>
+          <div class="gender-options">
+            <label>
+              <input type="radio" name="gender" value="male" required />
+              Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female" required />
+              Female
+            </label>
+          </div>
+        </div>
+        
+        <div class="input-group status-group">
+          <label for="status">Status</label>
+          <select id="status" name="status">
+            <option value="student">Student</option>
+            <option value="graduated">Graduated</option>
+          </select>
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+
+      <div class="social-login">
+        <h1>Or sign in with:</h1>
+        <button class="google-btn">
+          <i class="fab fa-google"></i> Google
+        </button>
+        <button class="facebook-btn">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </button>
+      </div>
+
+      <h1 class="sign-up">Already have an account? <a href="login.html">Log in</a></h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
