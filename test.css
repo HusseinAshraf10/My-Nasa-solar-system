@@ -1,0 +1,55 @@
+
+.quiz-container {
+    max-width: 800px; /* Limit the width of the quiz */
+    margin: 20px auto; /* Center the quiz on the page */
+    padding: 20px; /* Add padding around the content */
+    background-color: #f0f8ff; /* Light background for the quiz */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+    text-align: center; /* Center the quiz title */
+    color: #2c3e50; /* Darker color for the title */
+}
+
+.quiz-question {
+    margin-bottom: 20px; /* Spacing between questions */
+    padding: 15px; /* Padding inside each question block */
+    background-color: #ffffff; /* White background for questions */
+    border-radius: 8px; /* Rounded corners for question boxes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.quiz-question h2 {
+    font-size: 1.2em; /* Slightly larger font for questions */
+    color: #34495e; /* Darker color for question text */
+}
+
+label {
+    display: block; /* Each answer on a new line */
+    margin: 5px 0; /* Space between answer options */
+    cursor: pointer; /* Pointer cursor for labels */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and label text */
+}
+
+.submit-btn{
+    display: block; /* Center the submit button */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for the button */
+    margin-top: 20px; /* Space above the button */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 1em; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

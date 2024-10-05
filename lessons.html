@@ -1,49 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/WhatsApp Image 2024-09-30 at 11.40.35 PM.jpeg" >
-    <title>Nasa Solar System</title>
-  </head>
+    <link rel="stylesheet" href="lessons.css" />
+    <title>Lessons - NASA Solar System</title>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <a href="index.html">NASA Student</a>
+        </div>
+        <div class="mid-section">
+            <form action="">
+                <input type="text" placeholder="Search lessons..." aria-label="Search lessons" />
+                <button type="submit" class="submit-btn" aria-label="Submit search"><i class="material-icons">search</i></button>
+            </form>
+        </div>
+        <div class="right-section">
+            <a href="index.html">Home</a>
+            <a href="lessons.html" class="active">Lessons</a>
+            <a href="test.html">Test</a>
+            <a href="news.html">News</a>
+            <a href="books.html">Books</a>
+            <a href="about.html">About</a>
+            <a href="signin.html">Sign In</a>
+        </div>
+    </header>
 
-  <body>
+    <!-- Main Lessons Section -->
+    <main class="lessons-container">
+        <h1>Lessons</h1>
+        
+        <!-- Planetary Science Category -->
+        <section class="lesson-category">
+            <h2>Planetary Science</h2>
+            <div class="lesson-list">
+                <article class="lesson-item">
+                    <h3>Lesson 1: Introduction to Planets</h3>
+                    <p>Learn about the planets in our solar system, their orbits, and how they are classified.</p>
+                    <p class="lesson-duration"><strong>Duration:</strong> 30 minutes</p>
+                    <p class="lesson-level"><strong>Level:</strong> Beginner</p>
+                    <a href="lesson1.html" aria-label="Read more about Introduction to Planets">Read more</a>
+                </article>
+                <article class="lesson-item">
+                    <h3>Lesson 2: The Formation of Planets</h3>
+                    <p>Discover how planets are formed from gas and dust in space.</p>
+                    <p class="lesson-duration"><strong>Duration:</strong> 45 minutes</p>
+                    <p class="lesson-level"><strong>Level:</strong> Intermediate</p>
+                    <a href="lesson2.html" aria-label="Read more about the Formation of Planets">Read more</a>
+                </article>
+            </div>
+        </section>
 
-<header>
-  <div class="left-section">
-    <a href="index.html">Nasa student</a>
-    
-  </div>
-  <div class="mid-section">
-    <form action="">
-      <input type="text" placeholder="Search..." />
-      <button type="submit"><i class="material-icons">search</i></button>
-    </form>
-  </div>
+        <div class="image-container right-image">
+          <img src="./images/Exoplanet_types_graphic.webp" alt="Right Image" />
+      </div>
 
-  <div class="right-section">
-    <a href="index.html">Home</a>
-    <a href="lessons.html">Lessons</a>
-    <a href="test.html">Test</a>
-    <a href="news.html">News</a>
-    <a href="books.html">Books</a>
-    <a href="about.html">About</a>
-    <a href="signin.html">Sign In</a>
-  </div>
-</header>
-  </section>
+        <!-- Space Exploration Category -->
+        <section class="lesson-category">
+            <h2>Space Exploration</h2>
+            <div class="lesson-list">
+                <article class="lesson-item">
+                    <h3>Lesson 1: Early Space Missions</h3>
+                    <p>Explore the history of space exploration, from the first satellites to manned space missions.</p>
+                    <p class="lesson-duration"><strong>Duration:</strong> 40 minutes</p>
+                    <p class="lesson-level"><strong>Level:</strong> Beginner</p>
+                    <a href="lesson3.html" aria-label="Read more about Early Space Missions">Read more</a>
+                </article>
+                <article class="lesson-item">
+                    <h3>Lesson 2: Modern Space Technology</h3>
+                    <p>Learn about the advancements in technology that make space exploration possible today.</p>
+                    <p class="lesson-duration"><strong>Duration:</strong> 50 minutes</p>
+                    <p class="lesson-level"><strong>Level:</strong> Advanced</p>
+                    <a href="lesson4.html" aria-label="Read more about Modern Space Technology">Read more</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Exoplanets Category -->
+        <section class="lesson-category">
+            <h2>Exoplanets</h2>
+            <div class="lesson-list">
+                <article class="lesson-item">
+                    <h3>Lesson 1: What are Exoplanets?</h3>
+                    <p>An introduction to planets beyond our solar system.</p>
+                    <p class="lesson-duration"><strong>Duration:</strong> 35 minutes</p>
+                    <p class="lesson-level"><strong>Level:</strong> Beginner</p>
+                    <a href="lesson5.html" aria-label="Read more about Exoplanets">Read more</a>
+                </article>
+                <article class="lesson-item">
+                    <h3>Lesson 2: Methods of Finding Exoplanets</h3>
+                    <p>Understand how scientists discover planets orbiting other stars.</p>
+                    <p class="lesson-duration"><strong>Duration:</strong> 45 minutes</p>
+                    <p class="lesson-level"><strong>Level:</strong> Intermediate</p>
+                    <a href="lesson6.html" aria-label="Read more about Finding Exoplanets">Read more</a>
+                </article>
+            </div>
+        </section>
+
+        <div class="image-container right-image">
+          <img src="./images/2.webp" alt="Right Image" />
+      </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 NASA Student. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-   
-  </body>
+</body>
 </html>

@@ -1,0 +1,144 @@
+.lessons-container {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lessons-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #ffcc00;
+}
+
+.lesson-category {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.lesson-category h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.lesson-category h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #ffcc00;
+    margin-top: 5px;
+}
+
+.lesson-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.lesson-item {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.lesson-item:hover {
+    transform: translateY(-5px);
+}
+
+.lesson-item h3 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.lesson-item p {
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.lesson-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.lesson-item a:hover {
+    background: #e6b800;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #444;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #e6b800;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.image-container {
+    flex: 0 0 20%;
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.lessons-container {
+    flex: 1;
+}
