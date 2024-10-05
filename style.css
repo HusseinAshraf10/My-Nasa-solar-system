@@ -110,6 +110,59 @@ header {
   color: #ffee00; 
   text-shadow: 0 0 10px #ffee00, 0 0 20px #ffee00;
 }
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+	.mid-section input[type="text"] {
+	  width: 300px; /* Adjust the width of the search bar */
+	  font-size: 14px; /* Smaller font size */
+
+	}
+  
+	header {
+	  padding: 10px; /* Reduce header padding */
+	  position: absolute;
+	  top:0;
+	}
+  
+	.right-section a {
+	  font-size: 16px;
+	  margin: 0 10px;
+
+	}
+  
+	.left-section a {
+	  font-size: 18px;
+
+	}
+  }
+  
+  @media (max-width: 480px) {
+	header {
+	  flex-direction: column; /* Stack header items vertically */
+	  align-items: flex-start; /* Align items to the start */
+	}
+  
+	.mid-section {
+	  margin-top: 5px; /* Add some space between sections */
+	  width: 100%; /* Full width for the search section */
+	}
+  
+	.mid-section input[type="text"] {
+	  width: 100%; /* Full width for input */
+	}
+  
+	.right-section {
+	  display: flex;
+	  flex-wrap: wrap; /* Allow links to wrap */
+	  justify-content: flex-start; /* Align to the start */
+	}
+  
+	.right-section a {
+	  margin: 5px 0; /* Add some margin for spacing */
+	  font-size: 14px; /* Smaller font size for links */
+	}
+  }
+
 
 .solar-system-background {
     position: relative;
@@ -409,6 +462,155 @@ top:-11px;
 .planet-container:hover .info-box {
   display: block;
 }
+
+/* Media Query for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+	.solar-system-background {
+	  height: 80vh; /* Reduce height for smaller screens */
+	}
+  
+	.sun {
+	  height: 80px; /* Decrease size */
+	  width: 80px;
+	}
+  
+	.mercury,
+	.venus,
+	.earth,
+	.mars,
+	.jupiter,
+	.saturn,
+	.uranus,
+	.neptune {
+	  height: 10px; /* Adjust sizes accordingly */
+	  width: 10px;
+	}
+  
+	.earth {
+	  background-size: cover; /* Maintain image size */
+	}
+  
+	.mars {
+	  height: 8px; /* Adjust size */
+	  width: 8px;
+	}
+  
+	.jupiter {
+	  height: 24px; /* Adjust size */
+	  width: 24px;
+	}
+  
+	.saturn {
+	  height: 16px; /* Adjust size */
+	  width: 16px;
+	}
+  
+	.uranus,
+	.neptune {
+	  height: 15px; /* Adjust size */
+	  width: 15px;
+	}
+  
+	/* Adjust outlines */
+	.mercury-outline,
+	.venus-outline-1,
+	.earth-outline-1,
+	.mars-outline-1,
+	.jupiter-outline-1,
+	.saturn-outline-1,
+	.uranus-outline-1,
+	.neptune-outline-1 {
+	  height: 100px; /* Adjust outline sizes */
+	  width: 100px;
+	  border: 1px dotted rgba(221, 221, 221, 0.423);
+	}
+  
+	.planet-name {
+	  font-size: 0.8rem; /* Smaller font size for names */
+	  right: 25px; /* Adjust position */
+	}
+  
+	.info-box {
+	  width: 80%; /* Make info box responsive */
+	  font-size: 1rem; /* Smaller font for info box */
+	}
+  }
+  
+  /* Media Query for medium screens (between 768px and 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+	.solar-system-background {
+	  height: 90vh; /* Adjust height for medium screens */
+	}
+  
+	.sun {
+	  height: 90px; /* Slightly decrease size */
+	  width: 90px;
+	}
+  
+	.mercury,
+	.venus,
+	.earth,
+	.mars,
+	.jupiter,
+	.saturn,
+	.uranus,
+	.neptune {
+	  height: 12px; /* Adjust sizes accordingly */
+	  width: 12px;
+	}
+  
+	.earth {
+	  background-size: cover; /* Maintain image size */
+	}
+  
+	.mars {
+	  height: 10px; /* Adjust size */
+	  width: 10px;
+	}
+  
+	.jupiter {
+	  height: 28px; /* Adjust size */
+	  width: 28px;
+	}
+  
+	.saturn {
+	  height: 18px; /* Adjust size */
+	  width: 18px;
+	}
+  
+	.uranus,
+	.neptune {
+	  height: 17px; /* Adjust size */
+	  width: 17px;
+	}
+  
+	/* Adjust outlines */
+	.mercury-outline,
+	.venus-outline-1,
+	.earth-outline-1,
+	.mars-outline-1,
+	.jupiter-outline-1,
+	.saturn-outline-1,
+	.uranus-outline-1,
+	.neptune-outline-1 {
+	  height: 120px; /* Adjust outline sizes */
+	  width: 120px;
+	  border: 1px dotted rgba(221, 221, 221, 0.423);
+	}
+  
+	.planet-name {
+	  font-size: 1rem; /* Adjust font size for names */
+	  right: 30px; /* Adjust position */
+	}
+  
+	.info-box {
+	  width: 70%; /* Make info box responsive */
+	  font-size: 1.1rem; /* Adjust font for info box */
+	}
+  }
+  
+
+
 
 
 .content-area {
